@@ -13,13 +13,16 @@ import jakarta.servlet.annotation.*;
 @WebServlet(name = "helloServlet", value = "/vlad-form")
 public class VladServlet extends HttpServlet {
     private Cookie _cookie = null;
-
     public void init() {
 
     }
 
     //GET handler
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public void doGet(
+            HttpServletRequest request,
+            HttpServletResponse response
+    ) throws IOException, ServletException
+    {
         try{
             getCookieData(request);
         }catch (InvalidKeyException exc){
@@ -31,7 +34,11 @@ public class VladServlet extends HttpServlet {
     }
 
     //POST handler
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public void doPost(
+            HttpServletRequest request,
+            HttpServletResponse response
+    ) throws IOException, ServletException
+    {
         String _a = request.getParameter(Defaults._parameterA);
         String _b = request.getParameter(Defaults._parameterB);
         String _c = request.getParameter(Defaults._parameterC);
