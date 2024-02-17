@@ -1,0 +1,72 @@
+body{
+    display: flex;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.container{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 300px;
+    gap: 10px;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+
+.form-field > span{
+    display: flex;
+}
+
+.form-field > input{
+    display: flex;
+}
+
+.error-message{
+    color: red;
+}
+
+.results-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.results-title{
+    display: flex;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.results-item{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: stretch;
+    border-bottom: solid 1px black;
+}
+
+.results-item > div{
+    display: flex;
+}
+
+.image-container{
+    display: inline-flex;
+    flex-direction: column;
+    height: 500px;
+    aspect-ratio: 1/1;
+    margin-left: 50px;
+    background-image: url("../images/equation.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
