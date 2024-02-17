@@ -1,4 +1,4 @@
-package org.example.lab22;
+package org.example.lab22.vlad;
 
 public class Defaults {
     public static final String _parameterA = "a";

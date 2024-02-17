@@ -1,4 +1,4 @@
-package org.example.lab22;
+package org.example.lab22.vlad;
 
 import java.io.*;
 import java.security.InvalidKeyException;

@@ -1,6 +1,6 @@
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="org.example.lab22.CalcResult" %>
-<%@ page import="org.example.lab22.Defaults" %>
+<%@ page import="org.example.lab22.vlad.CalcResult" %>
+<%@ page import="org.example.lab22.vlad.Defaults" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%
     String error = (String)request.getAttribute(Defaults.Errors._errorParameter);

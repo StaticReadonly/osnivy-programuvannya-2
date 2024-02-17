@@ -1,4 +1,4 @@
-package org.example.lab22;
+package org.example.lab22.vlad;
 
 public class CalcResult {
     public double a = 0;
