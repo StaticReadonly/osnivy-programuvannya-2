@@ -55,7 +55,7 @@
             <%}}%>
         </div>
     </div>
-    <div class="image-container">
+    <div class="image-container" style="background-image: url('images/equation1.png');">
 
     </div>
 </body>

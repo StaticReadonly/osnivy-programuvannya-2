@@ -1,17 +1,20 @@
 package org.example.lab22.vlad;
 
-import java.io.*;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+import java.io.IOException;
 import java.security.InvalidKeyException;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.Collections;
 
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
-
-@WebServlet(name = "helloServlet", value = "/vlad-form")
-public class VladServlet extends HttpServlet {
+@WebServlet(name = "vladServlet2", value = "/vlad-form2")
+public class VladServlet2 extends HttpServlet {
     private Cookie _cookie = null;
     public void init() {
 
@@ -52,7 +55,7 @@ public class VladServlet extends HttpServlet {
             double c = Double.parseDouble(_c);
             double d = Double.parseDouble(_d);
 
-            double result = Math.sqrt(Math.abs(Math.sin(a) - 4.0 * Math.log(b) / Math.pow(c, d)));
+            double result = (Math.exp(a) + 3 * Math.log10(c) * Math.abs(Math.atan(d))) / (Math.pow(b, 1 / c));
 
             if (Double.isNaN(result)){
                 setZeroDivisionError(request);
@@ -104,7 +107,7 @@ public class VladServlet extends HttpServlet {
 
     //Forward request to jsp file
     private void forwardToJspFile(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
-        request.getRequestDispatcher(Defaults._jspFile).forward(request, response);
+        request.getRequestDispatcher("vlad-form2.jsp").forward(request, response);
     }
 
     //Set results cookie in response
@@ -113,7 +116,7 @@ public class VladServlet extends HttpServlet {
         cookie.setMaxAge(60 * 60 * 24 * 2);
         cookie.setHttpOnly(true);
         cookie.setDomain("localhost");
-        cookie.setPath("/lab2_2_war_exploded/vlad-form");
+        cookie.setPath("/lab2_2_war_exploded/vlad-form2");
         response.addCookie(cookie);
     }
 
@@ -122,7 +125,7 @@ public class VladServlet extends HttpServlet {
         Cookie deleteCookie = new Cookie(Defaults._resultsKey, "");
         deleteCookie.setMaxAge(0);
         deleteCookie.setHttpOnly(true);
-        deleteCookie.setPath("/lab2_2_war_exploded/vlad-form");
+        deleteCookie.setPath("/lab2_2_war_exploded/vlad-form2");
         response.addCookie(deleteCookie);
     }
 
