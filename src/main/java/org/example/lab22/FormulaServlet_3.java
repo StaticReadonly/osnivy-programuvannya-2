@@ -51,7 +51,7 @@ public class FormulaServlet_3 extends HttpServlet {
 
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
-        out.println("<h1>" + "(2*sin(a)+cos|b√c|)^d" + "="+ y+"</h1>");
+        out.println("<h1>" + "<img alt="err" src="images/equation3.png"/>" + "="+ y+"</h1>");
         out.println("</body></html>");
     }
 
