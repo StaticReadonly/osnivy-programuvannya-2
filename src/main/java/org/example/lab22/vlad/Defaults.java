@@ -10,7 +10,7 @@ public class Defaults {
 
     public static class Errors{
         public static final String _errorParameter = "Error";
-        public static final String _zeroDivisionError = "Can't divide by 0!";
+        public static final String _zeroDivisionError = "Invalid form data!";
         public static final String _invalidFormData = "Invalid form data!";
         public static final String _invalidKey = "Invalid key detected!";
         public static final String _logFromZero = "Log or negative square root does not exist!";

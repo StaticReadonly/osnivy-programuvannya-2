@@ -11,6 +11,6 @@ public class VladServlet3 extends AbstractVladServlet {
 
     @Override
     public double calculate(double a, double b, double c, double d) {
-        return Math.pow(2 * Math.sin(a) + Math.cos(Math.abs(b * Math.sqrt(c))), d);
+        return Math.pow(2.0 * Math.sin(a) + Math.cos(Math.abs(b * Math.sqrt(c))), d);
     }
 }
