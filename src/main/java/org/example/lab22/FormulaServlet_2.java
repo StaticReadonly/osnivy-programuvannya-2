@@ -56,7 +56,7 @@ public class FormulaServlet_2 extends HttpServlet {
 
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
-        out.println("<h1>" + "((e^a+3*lg(c))/√(b^c))*|arctg(d)|" + "="+ y+"</h1>");
+        out.println("<h1>" + "<img alt="err" src="images/equation2.png"/>" + "="+ y+"</h1>");
         out.println("</body></html>");
     }
 

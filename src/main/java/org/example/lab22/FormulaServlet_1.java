@@ -53,7 +53,7 @@ public class FormulaServlet_1 extends HttpServlet {
 
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
-        out.println("<h1>" + "√|sin(a)-4*ln(b)/c^d|" + "="+ y+"</h1>");
+        out.println("<h1>" + "<img alt="err" src="images/equation1.png"/>" + "="+ y+"</h1>");
         out.println("</body></html>");
     }
 
