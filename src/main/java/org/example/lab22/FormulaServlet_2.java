@@ -38,6 +38,10 @@ public class FormulaServlet_2 extends HttpServlet {
             response.sendError(400, "Ділення на 0 неможливе");
             return;
         }
+        if(c==0){
+            response.sendError(400, "Некоректно введені дані");
+            return;
+        }
 
         double y = ((Math.pow(Math.E,a) + 3 * Math.log10(c)) / Math.sqrt(Math.pow(b,c))) * Math.abs(Math.atan(d)) ;
 
