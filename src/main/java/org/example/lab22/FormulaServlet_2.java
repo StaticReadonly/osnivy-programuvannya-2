@@ -39,7 +39,7 @@ public class FormulaServlet_2 extends HttpServlet {
             return;
         }
         if(c==0){
-            response.sendError(400, "Некоректно введені дані");
+            response.sendError(400, "Не коректно введені дані");
             return;
         }
 
